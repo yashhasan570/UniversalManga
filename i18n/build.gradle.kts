@@ -1,9 +1,9 @@
-import mihon.gradle.tasks.GenerateLocalesConfigTask
+import universalmanga.gradle.tasks.GenerateLocalesConfigTask
 import org.jetbrains.kotlin.gradle.ExperimentalKotlinGradlePluginApi
 
 plugins {
-    alias(mihonx.plugins.kotlin.multiplatform)
-    alias(mihonx.plugins.spotless)
+    alias(universalmangax.plugins.kotlin.multiplatform)
+    alias(universalmangax.plugins.spotless)
 
     alias(libs.plugins.moko.resources)
 }

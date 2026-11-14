@@ -15,7 +15,7 @@ import kotlinx.coroutines.cancel
 import kotlinx.coroutines.joinAll
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import mihon.data.cache.ChapterCache
+import universalmanga.data.cache.ChapterCache
 import java.io.FileNotFoundException
 import java.util.concurrent.ConcurrentHashMap
 

@@ -47,9 +47,9 @@ import kotlinx.coroutines.sync.Semaphore
 import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
 import logcat.LogPriority
-import mihon.core.archive.ZipWriter
-import mihon.core.metro.AppCoroutineScope
-import mihon.data.cache.ChapterCache
+import universalmanga.core.archive.ZipWriter
+import universalmanga.core.metro.AppCoroutineScope
+import universalmanga.data.cache.ChapterCache
 import nl.adaptivity.xmlutil.serialization.XML
 import okhttp3.Response
 import tachiyomi.core.common.i18n.stringResource

@@ -2,13 +2,13 @@ package eu.kanade.tachiyomi.data.track.shikimori
 
 import eu.kanade.tachiyomi.data.database.models.Track
 import eu.kanade.tachiyomi.data.track.model.TrackSearch
-import mihon.graphql.shikimori.ShikimoriGetLibMangaQuery
-import mihon.graphql.shikimori.ShikimoriGetMangaDetailsQuery
-import mihon.graphql.shikimori.ShikimoriSearchMangaQuery
-import mihon.graphql.shikimori.fragment.MangaFragment
-import mihon.graphql.shikimori.type.MangaKindEnum
-import mihon.graphql.shikimori.type.MangaStatusEnum
-import mihon.graphql.shikimori.type.UserRateStatusEnum
+import universalmanga.graphql.shikimori.ShikimoriGetLibMangaQuery
+import universalmanga.graphql.shikimori.ShikimoriGetMangaDetailsQuery
+import universalmanga.graphql.shikimori.ShikimoriSearchMangaQuery
+import universalmanga.graphql.shikimori.fragment.MangaFragment
+import universalmanga.graphql.shikimori.type.MangaKindEnum
+import universalmanga.graphql.shikimori.type.MangaStatusEnum
+import universalmanga.graphql.shikimori.type.UserRateStatusEnum
 
 internal fun ShikimoriGetLibMangaQuery.Manga.toTrack(trackId: Long): Track {
     val sManga = this

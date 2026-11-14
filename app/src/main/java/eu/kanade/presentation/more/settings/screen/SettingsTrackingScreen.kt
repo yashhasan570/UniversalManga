@@ -56,12 +56,12 @@ import eu.kanade.tachiyomi.util.system.toast
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import mihon.app.di.appGraph
-import mihon.icons.materialsymbols.MaterialSymbols
-import mihon.icons.materialsymbols.automirroredrounded.Help
-import mihon.icons.materialsymbols.rounded.Close
-import mihon.icons.materialsymbols.roundedfilled.Visibility
-import mihon.icons.materialsymbols.roundedfilled.VisibilityOff
+import universalmanga.app.di.appGraph
+import universalmanga.icons.materialsymbols.MaterialSymbols
+import universalmanga.icons.materialsymbols.automirroredrounded.Help
+import universalmanga.icons.materialsymbols.rounded.Close
+import universalmanga.icons.materialsymbols.roundedfilled.Visibility
+import universalmanga.icons.materialsymbols.roundedfilled.VisibilityOff
 import tachiyomi.i18n.MR
 import tachiyomi.presentation.core.components.material.padding
 import tachiyomi.presentation.core.i18n.stringResource
@@ -75,7 +75,7 @@ object SettingsTrackingScreen : SearchableSettings {
     @Composable
     override fun RowScope.AppBarAction() {
         val uriHandler = LocalUriHandler.current
-        IconButton(onClick = { uriHandler.openUri("https://mihon.app/docs/guides/tracking") }) {
+        IconButton(onClick = { uriHandler.openUri("https://universalmanga.app/docs/guides/tracking") }) {
             Icon(
                 imageVector = MaterialSymbols.AutoMirroredRounded.Help,
                 contentDescription = stringResource(MR.strings.tracking_guide),

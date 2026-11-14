@@ -2,11 +2,11 @@ package eu.kanade.tachiyomi.data.backup.models
 
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.protobuf.ProtoNumber
-import mihon.core.common.extensions.JsonObjectEmptyBytes
-import mihon.core.common.extensions.toByteArray
-import mihon.core.common.extensions.toEpochMillisOrZero
-import mihon.core.common.extensions.toInstantOrNull
-import mihon.core.common.extensions.toJsonObject
+import universalmanga.core.common.extensions.JsonObjectEmptyBytes
+import universalmanga.core.common.extensions.toByteArray
+import universalmanga.core.common.extensions.toEpochMillisOrZero
+import universalmanga.core.common.extensions.toInstantOrNull
+import universalmanga.core.common.extensions.toJsonObject
 import tachiyomi.domain.chapter.model.Chapter
 import kotlin.time.Instant
 

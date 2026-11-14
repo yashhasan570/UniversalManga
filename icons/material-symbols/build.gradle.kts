@@ -1,16 +1,16 @@
-import mihon.gradle.tasks.GenerateVectorDrawablesTask
+import universalmanga.gradle.tasks.GenerateVectorDrawablesTask
 
 plugins {
-    alias(mihonx.plugins.android.library)
-    alias(mihonx.plugins.compose)
+    alias(universalmangax.plugins.android.library)
+    alias(universalmangax.plugins.compose)
 
-    alias(mihonx.plugins.spotless)
+    alias(universalmangax.plugins.spotless)
 
     alias(libs.plugins.valkyrie)
 }
 
 android {
-    namespace = "mihon.icons.materialsymbols"
+    namespace = "universalmanga.icons.materialsymbols"
 }
 
 spotless {
@@ -22,7 +22,7 @@ spotless {
 }
 
 valkyrie {
-    packageName = "mihon.icons.materialsymbols"
+    packageName = "universalmanga.icons.materialsymbols"
     generateAtSync = true
 
     imageVector {

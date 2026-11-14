@@ -43,11 +43,11 @@ import kotlinx.coroutines.withContext
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import logcat.LogPriority
-import mihon.app.di.AppGraph
-import mihon.app.di.appGraph
-import mihon.core.metro.metroGraph
-import mihon.domain.chapter.interactor.FilterChaptersForDownload
-import mihon.domain.source.interactor.UpdateMangaFromRemote
+import universalmanga.app.di.AppGraph
+import universalmanga.app.di.appGraph
+import universalmanga.core.metro.metroGraph
+import universalmanga.domain.chapter.interactor.FilterChaptersForDownload
+import universalmanga.domain.source.interactor.UpdateMangaFromRemote
 import tachiyomi.core.common.i18n.stringResource
 import tachiyomi.core.common.preference.getAndSet
 import tachiyomi.core.common.util.system.logcat
@@ -398,7 +398,7 @@ class LibraryUpdateWorker(private val context: Context, workerParams: WorkerPara
     private suspend fun writeErrorFile(errors: List<Pair<Manga, String?>>): File {
         try {
             if (errors.isNotEmpty()) {
-                val file = context.createFileInCacheDir("mihon_update_errors.txt")
+                val file = context.createFileInCacheDir("universalmanga_update_errors.txt")
                 file.bufferedWriter().use { out ->
                     out.write(context.stringResource(MR.strings.library_errors_help, ERROR_LOG_HELP_URL) + "\n\n")
                     // Error file format:
@@ -427,7 +427,7 @@ class LibraryUpdateWorker(private val context: Context, workerParams: WorkerPara
         private const val WORK_NAME_AUTO = "LibraryUpdate-auto"
         private const val WORK_NAME_MANUAL = "LibraryUpdate-manual"
 
-        private const val ERROR_LOG_HELP_URL = "https://mihon.app/docs/guides/troubleshooting/"
+        private const val ERROR_LOG_HELP_URL = "https://universalmanga.app/docs/guides/troubleshooting/"
 
         private const val MANGA_PER_SOURCE_QUEUE_WARNING_THRESHOLD = 60
 

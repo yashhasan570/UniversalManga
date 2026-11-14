@@ -63,7 +63,7 @@ import kotlinx.coroutines.flow.takeWhile
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import logcat.LogPriority
-import mihon.app.di.appGraph
+import universalmanga.app.di.appGraph
 import tachiyomi.core.common.util.system.logcat
 import java.io.FilterInputStream
 import java.lang.ref.WeakReference

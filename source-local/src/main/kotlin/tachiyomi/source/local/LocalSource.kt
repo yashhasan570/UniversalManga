@@ -26,8 +26,8 @@ import kotlinx.datetime.atStartOfDayIn
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.decodeFromStream
 import logcat.LogPriority
-import mihon.core.archive.archiveReader
-import mihon.core.archive.epubReader
+import universalmanga.core.archive.archiveReader
+import universalmanga.core.archive.epubReader
 import nl.adaptivity.xmlutil.core.AndroidXmlReader
 import nl.adaptivity.xmlutil.serialization.XML
 import tachiyomi.core.common.i18n.stringResource
@@ -402,7 +402,7 @@ class LocalSource(
 
     companion object {
         const val ID = 0L
-        const val HELP_URL = "https://mihon.app/docs/guides/local-source/"
+        const val HELP_URL = "https://universalmanga.app/docs/guides/local-source/"
 
         private val LATEST_THRESHOLD = 7.days.inWholeMilliseconds
     }

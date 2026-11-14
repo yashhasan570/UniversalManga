@@ -19,7 +19,7 @@ def main():
     strip('app/build.gradle.kts', ['projects.telemetry'])
     strip('app/src/main/java/eu/kanade/tachiyomi/App.kt',
           ['mihon.telemetry','TelemetryConfig.init','TelemetryConfig::set'])
-    strip('app/src/main/java/mihon/app/di/AppBindings.kt',
+    strip('app/src/main/java/universalmanga/app/di/AppBindings.kt',
           ['mihon.telemetry','TelemetryConfig.recordException'])
     p = ROOT/'app/src/main/java/eu/kanade/tachiyomi/util/system/BuildConfig.kt'
     if p.exists():

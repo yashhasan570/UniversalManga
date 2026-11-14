@@ -1,19 +1,19 @@
 import com.android.build.api.variant.ApplicationVariant
 import com.android.build.api.variant.BuildConfigField
 import com.google.firebase.crashlytics.buildtools.gradle.CrashlyticsExtension
-import mihon.gradle.Config
-import mihon.gradle.getCurrentTime
-import mihon.gradle.getLatestCommitCount
-import mihon.gradle.getLatestCommitSha
-import mihon.gradle.getLatestCommitTime
-import mihon.gradle.tasks.ReplaceShortcutsPlaceholderTask
+import universalmanga.gradle.Config
+import universalmanga.gradle.getCurrentTime
+import universalmanga.gradle.getLatestCommitCount
+import universalmanga.gradle.getLatestCommitSha
+import universalmanga.gradle.getLatestCommitTime
+import universalmanga.gradle.tasks.ReplaceShortcutsPlaceholderTask
 import java.io.FileInputStream
 import java.util.Properties
 
 plugins {
-    alias(mihonx.plugins.android.application)
-    alias(mihonx.plugins.compose)
-    alias(mihonx.plugins.spotless)
+    alias(universalmangax.plugins.android.application)
+    alias(universalmangax.plugins.compose)
+    alias(universalmangax.plugins.spotless)
 
     alias(libs.plugins.metro)
     alias(libs.plugins.aboutLibraries)
@@ -46,7 +46,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    if (System.getenv("MIHON_GITHUB_RELEASE").toBoolean()) {
+    if (System.getenv("UNIVERSALMANGA_GITHUB_RELEASE").toBoolean()) {
         signingConfigs {
             named("debug") {
                 storeFile = file(System.getenv("storeFile"))
@@ -334,9 +334,9 @@ dependencies {
 }
 
 apollo {
-    val schemaBasePath = "src/main/graphql/mihon/graphql"
+    val schemaBasePath = "src/main/graphql/universalmanga/graphql"
     service("anilist") {
-        packageName.set("mihon.graphql.anilist")
+        packageName.set("universalmanga.graphql.anilist")
         val srcDir = "$schemaBasePath/anilist"
         srcDir(file(srcDir))
 
@@ -350,7 +350,7 @@ apollo {
     }
 
     service("kitsu") {
-        packageName.set("mihon.graphql.kitsu")
+        packageName.set("universalmanga.graphql.kitsu")
         val srcDir = "$schemaBasePath/kitsu"
         srcDir(file(srcDir))
         android.defaultConfig.versionCode
@@ -373,12 +373,12 @@ apollo {
         mapScalar(
             "Map",
             "kotlin.collections.Map<String, Any?>",
-            "mihon.graphql.kitsu.adapter.KitsuMapAdapter",
+            "universalmanga.graphql.kitsu.adapter.KitsuMapAdapter",
         )
     }
 
     service("shikimori") {
-        packageName.set("mihon.graphql.shikimori")
+        packageName.set("universalmanga.graphql.shikimori")
         val srcDir = "$schemaBasePath/shikimori"
         srcDir(file(srcDir))
 
@@ -392,7 +392,7 @@ apollo {
     }
 
     service("suwayomi") {
-        packageName.set("mihon.graphql.suwayomi")
+        packageName.set("universalmanga.graphql.suwayomi")
         val srcDir = "$schemaBasePath/suwayomi"
         srcDir(file(srcDir))
 

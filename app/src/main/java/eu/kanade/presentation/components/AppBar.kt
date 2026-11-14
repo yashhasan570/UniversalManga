@@ -52,11 +52,11 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.flow.drop
-import mihon.icons.materialsymbols.MaterialSymbols
-import mihon.icons.materialsymbols.automirroredrounded.ArrowBack
-import mihon.icons.materialsymbols.rounded.Close
-import mihon.icons.materialsymbols.rounded.MoreVert
-import mihon.icons.materialsymbols.rounded.Search
+import universalmanga.icons.materialsymbols.MaterialSymbols
+import universalmanga.icons.materialsymbols.automirroredrounded.ArrowBack
+import universalmanga.icons.materialsymbols.rounded.Close
+import universalmanga.icons.materialsymbols.rounded.MoreVert
+import universalmanga.icons.materialsymbols.rounded.Search
 import tachiyomi.i18n.MR
 import tachiyomi.presentation.core.i18n.stringResource
 import tachiyomi.presentation.core.util.clearFocusOnSoftKeyboardHide

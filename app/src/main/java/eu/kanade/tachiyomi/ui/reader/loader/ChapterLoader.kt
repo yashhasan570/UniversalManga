@@ -10,9 +10,9 @@ import eu.kanade.tachiyomi.ui.reader.model.ReaderChapter
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
-import mihon.core.archive.archiveReader
-import mihon.core.archive.epubReader
-import mihon.data.cache.ChapterCache
+import universalmanga.core.archive.archiveReader
+import universalmanga.core.archive.epubReader
+import universalmanga.data.cache.ChapterCache
 import tachiyomi.core.common.i18n.stringResource
 import tachiyomi.core.common.util.system.logcat
 import tachiyomi.domain.manga.model.Manga

@@ -9,8 +9,8 @@ dependencyResolutionManagement {
         create("libs") {
             from(files("../libs.versions.toml"))
         }
-        create("mihonx") {
-            from(files("../mihon.versions.toml"))
+        create("universalmangax") {
+            from(files("../universalmanga.versions.toml"))
         }
     }
 }

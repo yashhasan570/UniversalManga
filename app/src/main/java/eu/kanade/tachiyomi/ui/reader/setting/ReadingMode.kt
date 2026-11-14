@@ -10,15 +10,15 @@ import eu.kanade.tachiyomi.ui.reader.viewer.pager.VerticalPagerViewer
 import eu.kanade.tachiyomi.ui.reader.viewer.webgpu.WebGpuViewer
 import eu.kanade.tachiyomi.ui.reader.viewer.webgpu.WebGpuViewerContinuous
 import eu.kanade.tachiyomi.ui.reader.viewer.webtoon.WebtoonViewer
-import mihon.app.di.appGraph
-import mihon.icons.custommaterialsymbols.CustomMaterialSymbols
-import mihon.icons.custommaterialsymbols.rounded.ReaderLeftToRight
-import mihon.icons.custommaterialsymbols.rounded.ReaderLongStrip
-import mihon.icons.custommaterialsymbols.rounded.ReaderLongStripGaps
-import mihon.icons.custommaterialsymbols.rounded.ReaderRightToLeft
-import mihon.icons.custommaterialsymbols.rounded.ReaderVertical
-import mihon.icons.materialsymbols.MaterialSymbols
-import mihon.icons.materialsymbols.rounded.MobileGear
+import universalmanga.app.di.appGraph
+import universalmanga.icons.custommaterialsymbols.CustomMaterialSymbols
+import universalmanga.icons.custommaterialsymbols.rounded.ReaderLeftToRight
+import universalmanga.icons.custommaterialsymbols.rounded.ReaderLongStrip
+import universalmanga.icons.custommaterialsymbols.rounded.ReaderLongStripGaps
+import universalmanga.icons.custommaterialsymbols.rounded.ReaderRightToLeft
+import universalmanga.icons.custommaterialsymbols.rounded.ReaderVertical
+import universalmanga.icons.materialsymbols.MaterialSymbols
+import universalmanga.icons.materialsymbols.rounded.MobileGear
 import tachiyomi.i18n.MR
 
 enum class ReadingMode(

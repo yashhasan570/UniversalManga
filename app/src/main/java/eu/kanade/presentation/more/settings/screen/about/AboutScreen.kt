@@ -44,15 +44,15 @@ import kotlinx.coroutines.withContext
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import logcat.LogPriority
-import mihon.app.di.appGraph
-import mihon.icons.materialsymbols.MaterialSymbols
-import mihon.icons.materialsymbols.rounded.Public
-import mihon.icons.simpleicons.Discord
-import mihon.icons.simpleicons.Facebook
-import mihon.icons.simpleicons.Github
-import mihon.icons.simpleicons.Reddit
-import mihon.icons.simpleicons.SimpleIcons
-import mihon.icons.simpleicons.X
+import universalmanga.app.di.appGraph
+import universalmanga.icons.materialsymbols.MaterialSymbols
+import universalmanga.icons.materialsymbols.rounded.Public
+import universalmanga.icons.simpleicons.Discord
+import universalmanga.icons.simpleicons.Facebook
+import universalmanga.icons.simpleicons.Github
+import universalmanga.icons.simpleicons.Reddit
+import universalmanga.icons.simpleicons.SimpleIcons
+import universalmanga.icons.simpleicons.X
 import tachiyomi.core.common.Constants
 import tachiyomi.core.common.util.system.logcat
 import tachiyomi.domain.release.interactor.GetApplicationRelease
@@ -168,7 +168,7 @@ object AboutScreen : Screen() {
                 item {
                     TextPreferenceWidget(
                         title = stringResource(MR.strings.privacy_policy),
-                        onPreferenceClick = { uriHandler.openUri("https://mihon.app/privacy/") },
+                        onPreferenceClick = { uriHandler.openUri("https://universalmanga.app/privacy/") },
                     )
                 }
 
@@ -182,7 +182,7 @@ object AboutScreen : Screen() {
                         LinkIcon(
                             label = stringResource(MR.strings.website),
                             icon = MaterialSymbols.Rounded.Public,
-                            url = "https://mihon.app",
+                            url = "https://universalmanga.app",
                         )
                         LinkIcon(
                             label = "Discord",
@@ -192,17 +192,17 @@ object AboutScreen : Screen() {
                         LinkIcon(
                             label = "X",
                             icon = SimpleIcons.X,
-                            url = "https://x.com/mihonapp",
+                            url = "https://x.com/yashhasan570",
                         )
                         LinkIcon(
                             label = "Facebook",
                             icon = SimpleIcons.Facebook,
-                            url = "https://facebook.com/mihonapp",
+                            url = "https://facebook.com/yashhasan570",
                         )
                         LinkIcon(
                             label = "Reddit",
                             icon = SimpleIcons.Reddit,
-                            url = "https://www.reddit.com/r/mihonapp",
+                            url = "https://www.reddit.com/r/yashhasan570",
                         )
                         LinkIcon(
                             label = "GitHub",
