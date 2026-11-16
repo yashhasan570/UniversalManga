@@ -12,8 +12,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import eu.kanade.presentation.theme.TachiyomiPreviewTheme
-import universalmanga.icons.materialsymbols.MaterialSymbols
-import universalmanga.icons.materialsymbols.rounded.Preview
+import mihon.icons.materialsymbols.MaterialSymbols
+import mihon.icons.materialsymbols.rounded.Preview
 import tachiyomi.presentation.core.util.secondaryItemAlpha
 
 @Composable

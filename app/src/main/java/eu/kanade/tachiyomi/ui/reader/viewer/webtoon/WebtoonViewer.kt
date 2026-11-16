@@ -27,7 +27,7 @@ import eu.kanade.tachiyomi.ui.reader.viewer.Viewer
 import eu.kanade.tachiyomi.ui.reader.viewer.collectChanges
 import kotlinx.coroutines.MainScope
 import kotlinx.coroutines.cancel
-import universalmanga.app.di.appGraph
+import mihon.app.di.appGraph
 import tachiyomi.core.common.util.system.logcat
 import java.util.Collections
 import java.util.WeakHashMap

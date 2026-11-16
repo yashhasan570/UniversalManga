@@ -3,7 +3,7 @@
 package eu.kanade.tachiyomi.source.model
 
 import kotlinx.serialization.json.JsonObject
-import universalmanga.core.common.extensions.EMPTY
+import mihon.core.common.extensions.EMPTY
 
 class SMangaImpl : SManga {
 

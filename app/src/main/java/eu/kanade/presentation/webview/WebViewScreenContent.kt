@@ -51,11 +51,11 @@ import eu.kanade.tachiyomi.util.system.setUserAgent
 import eu.kanade.tachiyomi.util.system.toast
 import kotlinx.coroutines.launch
 import logcat.LogPriority
-import universalmanga.icons.materialsymbols.MaterialSymbols
-import universalmanga.icons.materialsymbols.automirroredrounded.ArrowBack
-import universalmanga.icons.materialsymbols.automirroredrounded.ArrowForward
-import universalmanga.icons.materialsymbols.rounded.Close
-import universalmanga.icons.materialsymbols.rounded.TabClose
+import mihon.icons.materialsymbols.MaterialSymbols
+import mihon.icons.materialsymbols.automirroredrounded.ArrowBack
+import mihon.icons.materialsymbols.automirroredrounded.ArrowForward
+import mihon.icons.materialsymbols.rounded.Close
+import mihon.icons.materialsymbols.rounded.TabClose
 import tachiyomi.core.common.util.system.logcat
 import tachiyomi.i18n.MR
 import tachiyomi.presentation.core.components.material.Scaffold
@@ -318,7 +318,7 @@ fun WebViewScreenContent(
                                     .clip(MaterialTheme.shapes.small)
                                     .clickable {
                                         uriHandler.openUri(
-                                            "https://universalmanga.app/docs/guides/troubleshooting/#cloudflare",
+                                            "https://mihon.app/docs/guides/troubleshooting/#cloudflare",
                                         )
                                     },
                             )

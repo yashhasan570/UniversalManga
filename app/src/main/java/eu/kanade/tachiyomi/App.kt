@@ -57,12 +57,12 @@ import kotlinx.coroutines.flow.onEach
 import logcat.AndroidLogcatLogger
 import logcat.LogPriority
 import logcat.LogcatLogger
-import universalmanga.app.di.AppGraph
-import universalmanga.app.di.injekt.MetroInjektRegistrar
-import universalmanga.core.metro.AppCoroutineScope
-import universalmanga.core.metro.GraphProvider
-import universalmanga.core.migration.Migration
-import universalmanga.core.migration.Migrator
+import mihon.app.di.AppGraph
+import mihon.app.di.injekt.MetroInjektRegistrar
+import mihon.core.metro.AppCoroutineScope
+import mihon.core.metro.GraphProvider
+import mihon.core.migration.Migration
+import mihon.core.migration.Migrator
 import org.conscrypt.Conscrypt
 import tachiyomi.core.common.i18n.stringResource
 import tachiyomi.core.common.preference.Preference
@@ -75,7 +75,7 @@ import uy.kohesive.injekt.Injekt
 import uy.kohesive.injekt.api.InjektScope
 import java.security.Security
 import kotlin.concurrent.thread
-import universalmanga.icons.materialsymbols.R as MaterialSymbolsR
+import mihon.icons.materialsymbols.R as MaterialSymbolsR
 
 class App : Application(), DefaultLifecycleObserver, SingletonImageLoader.Factory, GraphProvider<AppGraph> {
 

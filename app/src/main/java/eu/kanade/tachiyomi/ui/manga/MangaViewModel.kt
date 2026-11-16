@@ -75,9 +75,9 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.plus
 import kotlinx.coroutines.withContext
 import logcat.LogPriority
-import universalmanga.core.metro.AppCoroutineScope
-import universalmanga.domain.chapter.interactor.FilterChaptersForDownload
-import universalmanga.domain.source.interactor.UpdateMangaFromRemote
+import mihon.core.metro.AppCoroutineScope
+import mihon.domain.chapter.interactor.FilterChaptersForDownload
+import mihon.domain.source.interactor.UpdateMangaFromRemote
 import tachiyomi.core.common.i18n.stringResource
 import tachiyomi.core.common.preference.CheckboxState
 import tachiyomi.core.common.preference.TriState

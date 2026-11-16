@@ -1,14 +1,14 @@
 plugins {
-    alias(universalmangax.plugins.android.library)
-    alias(universalmangax.plugins.compose)
+    alias(mihonx.plugins.android.library)
+    alias(mihonx.plugins.compose)
 
-    alias(universalmangax.plugins.spotless)
+    alias(mihonx.plugins.spotless)
 
     alias(libs.plugins.valkyrie)
 }
 
 android {
-    namespace = "universalmanga.icons.custommaterialsymbols"
+    namespace = "mihon.icons.custommaterialsymbols"
 }
 
 spotless {
@@ -20,7 +20,7 @@ spotless {
 }
 
 valkyrie {
-    packageName = "universalmanga.icons.custommaterialsymbols"
+    packageName = "mihon.icons.custommaterialsymbols"
     generateAtSync = true
 
     imageVector {

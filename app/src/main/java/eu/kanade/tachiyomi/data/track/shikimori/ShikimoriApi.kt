@@ -22,10 +22,10 @@ import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.buildJsonObject
 import kotlinx.serialization.json.put
 import kotlinx.serialization.json.putJsonObject
-import universalmanga.graphql.shikimori.ShikimoriGetCurrentUserQuery
-import universalmanga.graphql.shikimori.ShikimoriGetLibMangaQuery
-import universalmanga.graphql.shikimori.ShikimoriGetMangaDetailsQuery
-import universalmanga.graphql.shikimori.ShikimoriSearchMangaQuery
+import mihon.graphql.shikimori.ShikimoriGetCurrentUserQuery
+import mihon.graphql.shikimori.ShikimoriGetLibMangaQuery
+import mihon.graphql.shikimori.ShikimoriGetMangaDetailsQuery
+import mihon.graphql.shikimori.ShikimoriSearchMangaQuery
 import okhttp3.FormBody
 import okhttp3.OkHttpClient
 import okhttp3.RequestBody.Companion.toRequestBody
@@ -216,7 +216,7 @@ class ShikimoriApi(
         private const val OAUTH_URL = "$BASE_URL/oauth/token"
         private const val LOGIN_URL = "$BASE_URL/oauth/authorize"
 
-        private const val REDIRECT_URL = "universalmanga://shikimori-auth"
+        private const val REDIRECT_URL = "mihon://shikimori-auth"
 
         private const val CLIENT_ID = "PB9dq8DzI405s7wdtwTdirYqHiyVMh--djnP7lBUqSA"
         private const val CLIENT_SECRET = "NajpZcOBKB9sJtgNcejf8OB9jBN1OYYoo-k4h2WWZus"

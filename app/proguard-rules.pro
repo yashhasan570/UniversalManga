@@ -87,7 +87,7 @@
 -keep,allowoptimization class kotlinx.datetime.** { public protected *; }
 
 # Methods called by Shizuku only
--keepclassmembers class universalmanga.app.shizuku.ShellInterface {
+-keepclassmembers class mihon.app.shizuku.ShellInterface {
     public <init>();
     public void destroy();
 }

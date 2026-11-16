@@ -1,8 +1,8 @@
 plugins {
-    alias(universalmangax.plugins.android.library)
-    alias(universalmangax.plugins.compose)
+    alias(mihonx.plugins.android.library)
+    alias(mihonx.plugins.compose)
 
-    alias(universalmangax.plugins.spotless)
+    alias(mihonx.plugins.spotless)
 }
 
 android {

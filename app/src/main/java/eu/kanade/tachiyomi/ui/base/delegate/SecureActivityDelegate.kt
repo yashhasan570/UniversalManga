@@ -18,7 +18,7 @@ import eu.kanade.tachiyomi.util.view.setSecureScreen
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
-import universalmanga.app.di.appGraph
+import mihon.app.di.appGraph
 
 interface SecureActivityDelegate {
     fun registerSecureActivity(activity: AppCompatActivity)

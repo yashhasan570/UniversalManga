@@ -188,10 +188,10 @@ sqldelight-async = { module = "app.cash.sqldelight:async-extensions", version.re
 sqldelight-coroutines = { module = "app.cash.sqldelight:coroutines-extensions", version.ref = "sqldelight" }
 sqldelight-sqliteDialect338 = { module = "app.cash.sqldelight:sqlite-3-38-dialect", version.ref = "sqldelight" }
 stringSimilarity = { module = "com.aallam.similarity:string-similarity-kotlin", version.ref = "stringSimilarity" }
-subsamplingScaleImageView = { module = "com.github.yashhasan570:subsampling-scale-image-view", version.ref = "subsamplingScaleImageView" }
+subsamplingScaleImageView = { module = "com.github.mihonapp:subsampling-scale-image-view", version.ref = "subsamplingScaleImageView" }
 swipe = { module = "me.saket.swipe:swipe", version.ref = "swipe" }
 tapmoc-gradle = { module = "com.gradleup.tapmoc:tapmoc-gradle-plugin", version.ref = "tapmoc" }
-unifile = { module = "com.github.universalmanga:unifile", version.ref = "unifile" }
+unifile = { module = "com.github.mihon:unifile", version.ref = "unifile" }
 voyager-navigator = { module = "cafe.adriel.voyager:voyager-navigator", version.ref = "voyager" }
 voyager-tabNavigator = { module = "cafe.adriel.voyager:voyager-tab-navigator", version.ref = "voyager" }
 voyager-transitions = { module = "cafe.adriel.voyager:voyager-transitions", version.ref = "voyager" }

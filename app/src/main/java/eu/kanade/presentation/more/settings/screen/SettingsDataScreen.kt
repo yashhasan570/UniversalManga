@@ -58,9 +58,9 @@ import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import logcat.LogPriority
-import universalmanga.app.di.appGraph
-import universalmanga.icons.materialsymbols.MaterialSymbols
-import universalmanga.icons.materialsymbols.automirroredrounded.Help
+import mihon.app.di.appGraph
+import mihon.icons.materialsymbols.MaterialSymbols
+import mihon.icons.materialsymbols.automirroredrounded.Help
 import tachiyomi.core.common.i18n.stringResource
 import tachiyomi.core.common.storage.displayablePath
 import tachiyomi.core.common.util.system.logcat
@@ -75,7 +75,7 @@ import tachiyomi.presentation.core.util.collectAsState
 object SettingsDataScreen : SearchableSettings {
 
     val restorePreferenceKeyString = MR.strings.label_backup
-    const val HELP_URL = "https://universalmanga.app/docs/faq/storage"
+    const val HELP_URL = "https://mihon.app/docs/faq/storage"
 
     @ReadOnlyComposable
     @Composable
@@ -375,7 +375,7 @@ object SettingsDataScreen : SearchableSettings {
                 options = exportOptions,
                 onConfirm = { options ->
                     exportOptions = options
-                    saveFileLauncher.launch("universalmanga_library.csv")
+                    saveFileLauncher.launch("mihon_library.csv")
                 },
                 onDismissRequest = { showDialog = false },
             )

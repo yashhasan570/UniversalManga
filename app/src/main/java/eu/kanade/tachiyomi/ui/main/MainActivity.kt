@@ -109,16 +109,16 @@ import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
 import kotlinx.coroutines.launch
 import logcat.LogPriority
-import universalmanga.app.di.AppGraph
-import universalmanga.app.di.appGraph
-import universalmanga.core.metro.metroGraph
-import universalmanga.core.migration.Migrator
-import universalmanga.data.cache.ChapterCache
-import universalmanga.domain.database.repository.DatabaseRepository
-import universalmanga.feature.support.SupportUsScreen
-import universalmanga.icons.materialsymbols.MaterialSymbols
-import universalmanga.icons.materialsymbols.automirroredrounded.OpenInNew
-import universalmanga.icons.materialsymbols.roundedfilled.VolunteerActivism
+import mihon.app.di.AppGraph
+import mihon.app.di.appGraph
+import mihon.core.metro.metroGraph
+import mihon.core.migration.Migrator
+import mihon.data.cache.ChapterCache
+import mihon.domain.database.repository.DatabaseRepository
+import mihon.feature.support.SupportUsScreen
+import mihon.icons.materialsymbols.MaterialSymbols
+import mihon.icons.materialsymbols.automirroredrounded.OpenInNew
+import mihon.icons.materialsymbols.roundedfilled.VolunteerActivism
 import tachiyomi.core.common.Constants
 import tachiyomi.core.common.util.system.logcat
 import tachiyomi.domain.library.service.LibraryPreferences
@@ -665,7 +665,7 @@ class MainActivity : BaseActivity() {
 
     private fun Intent.isAddExtensionStoreIntent(): Boolean {
         return (scheme == "tachiyomi" && data?.host == "add-repo") ||
-            (scheme == "universalmanga" && data?.host == "extension-store")
+            (scheme == "mihon" && data?.host == "extension-store")
     }
 
     companion object {

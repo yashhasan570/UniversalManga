@@ -49,7 +49,7 @@ class CloudflareInterceptor(
     private val listenerScript = """
         addEventListener("message", ({data}) => {
             if (data?.source === "cloudflare-challenge") {
-                universalmanga?.postMessage(data.event);
+                mihon?.postMessage(data.event);
             }
         })
     """.trimIndent()
@@ -158,9 +158,9 @@ class CloudflareInterceptor(
 
             if (useIsolatedWorld) {
                 // An isolated world keeps the bridge out of the page's reach
-                val world = WebViewCompat.getExecutionWorld(webview, "universalmanga")
+                val world = WebViewCompat.getExecutionWorld(webview, "mihon")
                 val origins = setOf(originalRequest.url.origin())
-                WebViewCompat.addWebMessageListener(webview, "universalmanga", origins, world) { _, message, _, isMainFrame, _ ->
+                WebViewCompat.addWebMessageListener(webview, "mihon", origins, world) { _, message, _, isMainFrame, _ ->
                     if (isMainFrame) message.data?.let(::onChallengeEvent)
                 }
                 listenerScriptHandler = WebViewCompat.addJavaScriptOnEvent(
@@ -177,7 +177,7 @@ class CloudflareInterceptor(
                         @JavascriptInterface
                         fun postMessage(event: String) = onChallengeEvent(event)
                     },
-                    "universalmanga",
+                    "mihon",
                 )
             }
 
@@ -242,11 +242,11 @@ class CloudflareInterceptor(
                     if (useIsolatedWorld) {
                         WebViewCompat.removeWebMessageListener(
                             this,
-                            WebViewCompat.getExecutionWorld(this, "universalmanga"),
-                            "universalmanga",
+                            WebViewCompat.getExecutionWorld(this, "mihon"),
+                            "mihon",
                         )
                     } else {
-                        removeJavascriptInterface("universalmanga")
+                        removeJavascriptInterface("mihon")
                     }
                     listenerScriptHandler?.remove()
                     stopLoading()

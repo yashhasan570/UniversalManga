@@ -10,8 +10,8 @@ pluginManagement {
 
 dependencyResolutionManagement {
     versionCatalogs {
-        create("universalmangax") {
-            from(files("gradle/universalmanga.versions.toml"))
+        create("mihonx") {
+            from(files("gradle/mihon.versions.toml"))
         }
     }
 

@@ -21,7 +21,7 @@ import eu.kanade.tachiyomi.ui.base.delegate.ThemingDelegate
 import eu.kanade.tachiyomi.ui.reader.setting.ReaderPreferences
 import eu.kanade.tachiyomi.util.lang.truncateCenter
 import logcat.LogPriority
-import universalmanga.app.di.appGraph
+import mihon.app.di.appGraph
 import rikka.shizuku.ShizukuProvider
 import rikka.sui.Sui
 import tachiyomi.core.common.i18n.stringResource

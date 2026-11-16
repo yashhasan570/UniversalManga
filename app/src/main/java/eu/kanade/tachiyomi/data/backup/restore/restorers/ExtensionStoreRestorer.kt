@@ -2,8 +2,8 @@ package eu.kanade.tachiyomi.data.backup.restore.restorers
 
 import dev.zacsweers.metro.Inject
 import eu.kanade.tachiyomi.data.backup.models.BackupExtensionStore
-import universalmanga.domain.extension.model.ExtensionStore
-import universalmanga.domain.extension.repository.ExtensionStoreRepository
+import mihon.domain.extension.model.ExtensionStore
+import mihon.domain.extension.repository.ExtensionStoreRepository
 
 @Inject
 class ExtensionStoreRestorer(
