@@ -84,7 +84,3 @@ limitations under the License.
 </pre>
 
 </div>
-
-## Contact
-
-Questions, problem reports or feedback? Reach us on Telegram: [@johnconstantine570](https://t.me/johnconstantine570)
